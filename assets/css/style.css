@@ -1,21 +1,29 @@
+/* Universal Selector */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Element Selectors select all of that element type */
 body {
+    /* Sets background color and uses hex codes to define color*/
     background-color: #2a607c;
 }
 
 header {
+    /* Turns this element into a flexbox */
     display: flex;
+    /* Defines how to distribute the empty space between child elements */
     justify-content: space-between;
     align-items: center;
+    /* Sets padding on all sides to 5px */
     padding:5px;
+    /* Font-family property specifies a list of fonts to be used in order of priority */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Change the header background */
     background-color: #2a607c;
-    color: #ffffff;
+    /* Font-size property sets the size of a font */
     font-size: 20px;
     }
 
@@ -25,12 +33,14 @@ header h1 {
     color: #d8d6dc
 }
 
+/*ul defines the unordered(bullet)list*/
 header ul {
     list-style-type: none;
 }
-
+/*ul together with li defines the unordered list*/
 header ul li {
     display: inline-block;
+    /* Sets left margin to 25px */
     margin-left: 25px;
 }
 
@@ -40,6 +50,7 @@ a {
 }
 
 section.hero {
+    /*Sets the height and width of the section .hero */
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -51,11 +62,12 @@ section.hero {
 main {
     width: 74%;
     display: inline-block;
+    /* Sets left margin to 20px*/
     margin-left: 20px;
 }
 
 section
-{
+{/* Sets bottom margin to 20px*/
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -68,6 +80,7 @@ section img {
     max-height: 200px;
 }
 
+/* Class Selectors select all elements with that class */
 .h2 {
     margin-bottom: 20px;
     font-size: 36px;
@@ -101,6 +114,7 @@ aside h3 {
 
 aside img {
     display: block;
+    /* Sets all sides to 10px */
     margin: 10px auto;
     max-width: 150px;
 }
